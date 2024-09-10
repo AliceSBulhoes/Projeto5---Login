@@ -15,7 +15,7 @@ export const LoginStyle = styled.section`
         .container-login{
             display: flex;
             align-items: center;
-            justify-content: space-evenly;
+            justify-content: space-around;
             background-color: ${Colors.hd_color};
             width: 55%;
             height: 75%;
@@ -112,6 +112,14 @@ export const LoginStyle = styled.section`
                         }
                     }
                 }
+            }
+
+            .img-logo{
+                position: relative;
+                left: 2px;
+                width: 250px;
+                border: solid 2px ${Colors.bg_color};
+                border-radius: 4px;
             }
         }
     }

@@ -96,7 +96,7 @@ const Login = () => {
               </ul>
             </form>
           </div>
-          <img src={logo} alt='imagem-logo'/>
+          <img src={logo} alt='imagem-logo'className='img-logo'/>
         </div>
       </section>
     </LoginStyle>
