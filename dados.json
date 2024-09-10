@@ -1,6 +1,6 @@
 {
-    "ususarios":[
+    "usuarios":[
         {"usuario": "Admin", "password": "123"},
-        {"usuario": "Funcionario", "password": "123"}
+        {"usuario": "Funcionario", "password": "12345"}
     ]
 }

@@ -15,7 +15,7 @@ const Login = () => {
 
   // Hook useEffect: busca dados para o Login
   useEffect(()=>{
-    fetch("http://localhost:5000/ususarios")
+    fetch("http://localhost:5000/usuarios/")
     .then(res => {
       return res.json();
     })
@@ -26,8 +26,8 @@ const Login = () => {
 
   // Validar Login
   const validade = () =>{
-    for(let i = 0; i < usuarios.lenght; i++ ){
-      if(usuarios[i].usuario == usuario.current.value && usuarios[i].usuario == usuario.current.value){
+    for(let i = 0; i < usuarios.length; i++ ){
+      if(usuarios[i].usuario == usuario.current.value && usuarios[i].password == password.current.value){
         return true
       }
     }
@@ -36,7 +36,7 @@ const Login = () => {
   // Criando handleSubmit
   const handleSubmit = (event) =>{
     event.preventDefault();
-    if(validade){
+    if(validade()){
       let token = Math.random().toString(16).substring(2) + Math.random().toString(16).substring(2)
 
       sessionStorage.setItem("usuario", usuario.current.value);
@@ -69,7 +69,7 @@ const Login = () => {
             <div className="w-input">
               <input 
               type="password" 
-              id="senha" 
+              id="password" 
               ref={password}
               className='input-form' 
               />
