@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { LoginStyle } from '../styles/LoginStyle';
 
 const Login = () => {
 
@@ -49,53 +50,55 @@ const Login = () => {
 
   return (
     <>
-    <section className='constainer'>
-      <div className="container">
-        <div className="login">
-          {/* Formulário Login */}
-          <form action="" className="login-form">
-            <span className='titulo-login'>Faça o seu Login!</span>
-            {/* Input Usuário */}
-            <div className="w-input">
-              <input 
-                type="text" 
-                ref={usuario} 
-                id="usuario" 
-                className="input-form" 
+    <LoginStyle>
+      <section className='container'>
+        <div className="container-login">
+          <div className="login">
+            {/* Formulário Login */}
+            <form action="" className="login-form">
+              <span className='titulo-login'>Faça o seu Login!</span>
+              {/* Input Usuário */}
+              <div className="w-input">
+                <input
+                  type="text"
+                  ref={usuario}
+                  id="usuario"
+                  className="input-form"
+                  placeholder='Digite seu usuário'
+                  />
+              </div>
+              {/* Input Senha */}
+              <div className="w-input">
+                <input
+                type="password"
+                id="password"
+                ref={password}
+                className='input-form'
+                placeholder='Digite sua senha'
                 />
-                <span placeholder="usuario"></span>
-            </div>
-            {/* Input Senha */}
-            <div className="w-input">
-              <input 
-              type="password" 
-              id="password" 
-              ref={password}
-              className='input-form' 
-              />
-              <span placeholder='Senha'></span>
-            </div>
-            {/* BTN Login */}
-            <div className="login-btn">
-              <button type="submit" className="login-form-btn" onClick={handleSubmit}>Login</button>
-            </div>
-            {/* Utils */}
-            <ul className="utils">
-              <li>
-                <span className='text1'>Esqueceu ua senha?</span>
-              </li>
-              <li>
-                <span className="text1">Não tem conta?</span>
-                <a href='#' className='text2'>
-                  Cadastrar
-                </a>
-              </li>
-            </ul>
-          </form>
+              </div>
+              {/* BTN Login */}
+              <div className="login-btn">
+                <button type="submit" className="login-form-btn" onClick={handleSubmit}>Login</button>
+              </div>
+              {/* Utils */}
+              <ul className="utils">
+                <li>
+                  <span className='text1'>Esqueceu sua senha ?</span>
+                </li>
+                <li>
+                  <span className="text1">Não tem conta ?</span>
+                  <a href='#' className='text2'>
+                    Cadastrar
+                  </a>
+                </li>
+              </ul>
+            </form>
+          </div>
+          <img src='' alt='imagem-logo'/>
         </div>
-        <img src='' alt='imagem-logo'/>
-      </div>
-    </section>
+      </section>
+    </LoginStyle>
     </>
   )
 }
