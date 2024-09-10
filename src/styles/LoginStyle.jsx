@@ -1,4 +1,6 @@
+// Importando dependencias
 import styled from 'styled-components';
+// Importando cores
 import Colors from '../constant/Colors'
 
 export const LoginStyle = styled.section`
@@ -24,6 +26,7 @@ export const LoginStyle = styled.section`
             .login{
                 width: 40%;
 
+                /* Estilo do forms */
                 .login-form{
                     display: flex;
                     flex-direction: column;
@@ -38,6 +41,7 @@ export const LoginStyle = styled.section`
                         color: ${Colors.ft_color};
                     }
 
+                    /* Estilo dos inputs */
                     .w-input{
                         width: 100%;
                         display: flex;
@@ -64,6 +68,7 @@ export const LoginStyle = styled.section`
                         }
                     }
 
+                    /* Estilo do botão */
                     .login-btn{
                         .login-form-btn{
                             padding: 0.5rem 1rem;
@@ -83,6 +88,7 @@ export const LoginStyle = styled.section`
                         }
                     }
 
+                    /* Estilo utils */
                     .utils{
                         list-style: none;
                         display: flex;
