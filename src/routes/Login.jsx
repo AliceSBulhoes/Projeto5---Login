@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { LoginStyle } from '../styles/LoginStyle';
 import logo from '../assets/logo.jpg'
 
@@ -89,9 +89,7 @@ const Login = () => {
                 </li>
                 <li>
                   <span className="text1">Não tem conta ?</span>
-                  <a href='#' className='text2'>
-                    Cadastrar
-                  </a>
+                  <Link to="/cadastro" className='text2'>Cadastrar</Link>
                 </li>
               </ul>
             </form>

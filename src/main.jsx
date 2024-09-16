@@ -7,6 +7,7 @@ import Error from './routes/Error.jsx'
 import Home from './routes/Home.jsx'
 import Login from './routes/Login.jsx'
 import Dashboard from './routes/Dashboard.jsx'
+import Cadastrar from './routes/Cadastrar.jsx'
 // Importando estilos
 import { GlobalStyle } from './styles/GlobalStyle.jsx'
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter([{
   children: [
     {path:'/', element: <Home/>},
     {path: '/login', element: <Login/>},
+    {path: '/cadastro', element: <Cadastrar/>},
     {path: '/dashboard', element: <Dashboard/>}
   ]
 }])
