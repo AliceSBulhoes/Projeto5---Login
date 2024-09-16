@@ -63,8 +63,9 @@ export const LoginStyle = styled.section`
 
                         .input-form:focus{
                             background-color: ${Colors.bg_color};
-                            border: solid 2px ${Colors.hd_color};
+                            border: solid 2px ${Colors.ft_color};
                             color: ${Colors.hd_color};
+                            outline: 0;
                         }
                     }
 
