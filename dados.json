@@ -1,6 +1,19 @@
 {
-    "usuarios":[
-        {"usuario": "Admin", "password": "123"},
-        {"usuario": "Funcionario", "password": "12345"}
-    ]
+  "usuarios": [
+    {
+      "usuario": "Admin",
+      "password": "123",
+      "id": "cec9"
+    },
+    {
+      "usuario": "Funcionario",
+      "password": "12345",
+      "id": "1da2"
+    },
+    {
+      "id": "4b3c",
+      "usuario": "Alice",
+      "password": "123"
+    }
+  ]
 }
