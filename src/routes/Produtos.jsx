@@ -1,4 +1,5 @@
 import React from 'react'
+// Importando imagens
 import prancha1 from '../assets/prancha1.png'
 import prancha2 from '../assets/prancha2.png'
 import prancha3 from '../assets/prancha3.png'
