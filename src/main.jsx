@@ -10,6 +10,7 @@ import Dashboard from './routes/Dashboard.jsx'
 import Cadastrar from './routes/Cadastrar.jsx'
 // Importando estilos
 import { GlobalStyle } from './styles/GlobalStyle.jsx'
+import Produtos from './routes/Produtos.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -20,7 +21,8 @@ const router = createBrowserRouter([{
     {path:'/', element: <Home/>},
     {path: '/login', element: <Login/>},
     {path: '/cadastro', element: <Cadastrar/>},
-    {path: '/dashboard', element: <Dashboard/>}
+    {path: '/dashboard', element: <Dashboard/>},
+    {path: '/produtos', element: <Produtos/>}
   ]
 }])
 
